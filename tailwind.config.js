@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         "accent": "#007F68",
         "accent-dark": "#003f2a",
+        "primary": '#007f68',
+        "highlight": '#eae8fb',
+        "bgGray": '#fbfafd',
       },
     },
     screens: {
