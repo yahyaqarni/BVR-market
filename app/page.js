@@ -4,14 +4,7 @@ import Header from "@/components/Header";
 import ImageSlider from "@/components/ImageSlider";
 import RoundedButton from "@/components/RoundedButton";
 import TextInput from "@/components/TextInput";
-//import Slider from "react-slick";
-import CardsGrid from "@/components/CardsGrid";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ImageSlider from "@/components/ImageSlider";
-import RoundedButton from "@/components/RoundedButton";
-import TextInput from "@/components/TextInput";
-//import Slider from "react-slick";
+
 
 export default function Home() {
 
