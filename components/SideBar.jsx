@@ -1,4 +1,7 @@
+'use client';
+
 import Dashboard from '@/app/dashboard/page'
+import { signOut } from 'next-auth/react';
 import Link from 'next/link'
 import React from 'react'
 
@@ -25,7 +28,7 @@ const SideBar = () => {
                     ))
                 }
             </div>
-            <button className='bg-accent-dark text-white w-full py-2 rounded-md mb-8'>Logout</button>
+            <button onClick={() => signOut()} className='bg-accent-dark text-white w-full py-2 rounded-md mb-8'>Logout</button>
         </div>
     )
 }

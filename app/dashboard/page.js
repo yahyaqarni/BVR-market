@@ -1,8 +1,26 @@
+'use client';
+
+import { signIn, useSession } from 'next-auth/react'
+import { redirect } from 'next/dist/server/api-utils'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import { useRouter } from 'next/navigation';
+import React, { useEffect } from 'react'
 
 const Dashboard = () => {
+  const { data: session, status, update } = useSession()
+  const router = useRouter();
+
+  // useEffect(() => {
+  //   if (status === "authenticated" && session?.user?.role === 'bdo') {
+  //     // User is authenticated and has the 'bdo' role, stay on the dashboard
+  //   } else {
+  //     // Redirect to the login page if not authenticated or doesn't have the 'bdo' role
+  //     router.push('/login');
+  //   }
+  // }, [status, session, router]);
+
+  
   return (
     <div className='bg-[#e0e0e0] w-full h-full text-black px-28 py-16 mt-[60px]'>
       <p className='text-3xl mb-6'>Welcome to Dashboard BDO!</p>
@@ -22,6 +40,7 @@ const Dashboard = () => {
       </div>
     </div>
   )
+  
 }
 
 export default Dashboard

@@ -7,6 +7,8 @@ const Header = () => {
         { name: "Dashboard", icon: 'home', link: '/dashboard' },
         { name: "Grains", icon: 'home', link: '/dashboard/grains' },
         { name: "Vegetables", icon: 'home', link: '/dashboard/vegetables' },
+        { name: "Sign Up", icon: 'home', link: '/register' },
+        { name: "Login", icon: 'home', link: '/login' },
     ]
 
     return (
