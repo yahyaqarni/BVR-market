@@ -18,7 +18,6 @@ const SideBar = () => {
 
     return (
         <div className='w-full h-full flex flex-col text-black bg-accent py-8 px-4 justify-between mt-[60px] '>
-        <div className='w-full h-full flex flex-col text-black bg-accent py-8 px-4 justify-between mt-[60px] '>
             <div className='w-full'>
                 {
                     menuItems.map((item, index) => (
@@ -35,4 +34,4 @@ const SideBar = () => {
     )
 }
 
-export default SideBar
+export default SideBar;
