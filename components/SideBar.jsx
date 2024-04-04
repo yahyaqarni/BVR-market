@@ -18,11 +18,13 @@ const SideBar = () => {
 
     return (
         <div className='w-full h-full flex flex-col text-black bg-accent py-8 px-4 justify-between mt-[60px] '>
+        <div className='w-full h-full flex flex-col text-black bg-accent py-8 px-4 justify-between mt-[60px] '>
             <div className='w-full'>
                 {
                     menuItems.map((item, index) => (
                         <div key={index} className='flex items-center gap-4 mb-4'>
                             <div className='w-8 h-8 bg-white rounded-full'></div>
+                            <Link href={item.link} className='text-white'>{item.name}</Link>
                             <Link href={item.link} className='text-white'>{item.name}</Link>
                         </div>
                     ))
